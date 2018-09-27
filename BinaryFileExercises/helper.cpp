@@ -268,7 +268,7 @@ void RemoveMonster(monster * list)
 	index = atoi(id);
 
 	// Check if there is no monster at the chosen array position
-	if (list[index].monsterID[0] == ' ')
+	if (list[index].monsterID[index] == ' ')
 	{
 		cout << "There is no monster with that ID currently. Please try again with a different ID." << endl;
 		sleep_for(1s);
